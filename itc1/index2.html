@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background: rgb(1, 38, 119);
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    background: rgb(0, 91, 197);
+    border-radius: 5px;
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: 0 10px 10px rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    justify-content: center;
+}
+.container > div {
+    background-color: #8b8b8b;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 5px;
+    height: 550px;
+    border-radius: 4px;
+    position: relative;
+}
+.container > div img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px rgb(113, 109, 109);
+}
+.container > div:hover img {
+    transform: scale(1.1);
+}
+.container > div .additional-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease;
+    border-radius: 5px;
+}
+.container > div:hover .additional-content {
+    opacity: 50;
+    background-color: normal;
+}
+div span {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border: 3px solid black;
+    font-weight: bold;
+    background-color: rgb(0, 186, 248);
+    border-radius: 7px;
+    display: inline-block;
+    padding: 3px 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.container > div {
+    position: relative;
+}
+.ranking {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+    border-color: white;
+    background-color: blue;
+    z-index: 2;
+    text-shadow: blanchedalmond;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+</style>
+</head>
+<body>
+<h1>My Top 10 ALL TIME FAVORITE SHOWS</h1>
+<br>
+<br>
+<div class="container">
+  <div>
+    <span class="ranking">1</span>
+    <img src="images/BreakingBad-BryanCranston-Heisenberg-TVShowPoster9.jpg">
+    <h3>BREAKING BAD</h3>
+    <p>2008</p>
+    <span>Crime</span>
+    <span>Drama</span>
+    <div class="additional-content">
+      <h3>BREAKING BAD OVERVIEW</h3>
+      <p>The series follows the exploits of Walter White, a modest high school chemistry teacher, who discovers a new purpose in life when he learns he has terminal cancer and turns to a life of crime to provide for his family.</p>
+    </div>
+  </div>
+ 
+
+
+  <div>
+    <span class="ranking">2</span>
+    <img src="images/d7590f135861167.61ef6fb49f8e4.jpg ">
+    <h3>PEAKY BLINDERS</h3>
+    <p>2013</p>
+    <span>Crime</span>
+    <span>Drama</span>
+    <div class="additional-content">
+      <h3>PEAKY BLINDERS OVERVIEW</h3>
+      <p>Peaky Blinders is a crime drama centred on a family of mixed Irish Traveller and Romani origins based in Birmingham, England, starting in 1919, several months after the end of the First World War. It centres on the Peaky Blinders street gang and their ambitious, cunning crime boss Tommy Shelby.</p>
+    </div>
+  </div>
+
+  <div>
+    <span class="ranking">3</span>
+    <img src="images/lupin-p2-main-vertical-rgb-pre-en-us-1623159220.jpg">
+    <h3>LUPIN</h3>
+    <p>2021</p>
+    <span>Action</span>
+    <span>Adventure</span>
+    <div class="additional-content">
+      <h3>LUPIN OVERVIEW</h3>
+      <p>Lupin is a French action and adventure mystery series. The series follows the exploits of Assane Diop, a gentleman thief who styles himself as a modern-day Arsène Lupin.</p>
+    </div>
+  </div>
+
+  <div>
+    <span class="ranking">4</span>
+    <img src="images/house-of-the-dragon.jpg ">
+    <h3>HOUSE OF<br>THE DRAGONS </h3>
+    <p>2022</p>
+    <span>Adventure</span>
+    <span>Drama</span>
+    <div class="additional-content">
+      <h3>HOUSE OF THE DRAGONS OVERVIEW</h3>
+      <p>House of the Dragon is about the Targaryen family, who ruled Westeros for 300 years. House of the Dragon begins around 100 years into House Targaryen's reign.</p>
+    </div>
+  </div>
+
+  <div>
+    <span class="ranking">5</span>
+    <img src="images/p21307724_b_v13_aa.jpg">
+    <h3>SNOWFALL</h3>
+    <p>2016</p>
+    <span>Crime</span>
+    <span>Drama</span>
+    <div class="additional-content">
+      <h3>SNOWFALL OVERVIEW</h3>
+      <p>Snowfall is a drama set against the infancy of the crack cocaine epidemic in Los Angeles and its ultimate radical impact on the culture as we know it.</p>
+    </div>
+  </div>
+
+  <div>
+    <span class="ranking">6</span>
+    <img src="images/s-l1200.jpg ">
+    <h3>THE BEAR</h3>
+    <p>2022</p>
+    <span>Comedy</span>
+    <span>Drama</span>
+    <div class="additional-content">
+      <h3>THE BEAR OVERVIEW</h3>
+      <p>A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.</p>
+    </div>
+  </div>
+
+  <div>
+    <span class="ranking">7</span>
+    <img src=" images/MV5BNDlkYzIwYTYtOWZjMC00M2NlLWI1NDgtNjUzN2NmYWI5YThkXkEyXkFqcGdeQXVyMTYzMjQ4Nzg@._V1_.jpg">
+    <h3>TED</h3>
+    <p>2015</p>
+    <span>Comedy</span>
+    
+    <div class="additional-content">
+      <h3>TED OVERVIEW</h3>
+      <p>It's 1993, and Ted the bear's moment of fame has passed. He's living back home with his best friend, John Bennett, and his family. While Ted may be a lousy influence on John, he's a loyal pal who will go out on a limb for friendship.</p>
+    </div>
+  </div>
+
+  <div>
+    <span class="ranking">8</span>
+    <img src="images/illusion-design-money-heist-poster-min.jpg ">
+    <h3>MONEY HEIST</h3>
+    <p>2017</p>
+    <span>  Thriller</span>
+    <span>Crime Drama</span>
+    <div class="additional-content">
+      <h3>MONEY HEIST OVERVIEW</h3>
+      <p>An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</p>
+    </div>
+  </div>
+
+  <div>
+    <span class="ranking">9</span>
+    <img src="images/MV5BODI0OGIxM2MtZTQ0YS00ZjhhLWE3YzYtYzE2N2JkNThmY2RkXkEyXkFqcGdeQXVyODkzMzE0Nzc@._V1_FMjpg_UX1000_.jpg ">
+    <h3>ALICE IN <br>BORDERLAND</h3>
+    <p>2020</p>
+    <span>  Drama</span>
+    <span>Thriller</span>
+    <div class="additional-content">
+      <h3>ALICE IN BORDERLAND OVERVIEW</h3>
+      <p>Obsessed gamer Arisu suddenly finds himself in a strange, emptied-out version of Tokyo in which he and his friends must compete in dangerous games in order to survive.</p>
+    </div>
+  </div>
+
+  <div>
+    <span class="ranking">1<br>0</span>
+  
+    <img src="images/71ml6HO4ocL._AC_UF894,1000_QL80_.jpg ">
+    <h3>SUITS</h3>
+    <p>2011</p>
+    <span> Legal Drama</span>
+    <div class="additional-content">
+      <h3>SUITS OVERVIEW</h3>
+      <p>On the run from a drug deal gone bad, brilliant college dropout Mike Ross finds himself working with Harvey Specter, one of New York City's best lawyers.</p>
+    </div>
+  </div>
+
+  <footer>
+   Build by MARK CANTOS
+  </footer>
+
+</body>
+</html>
